@@ -30,11 +30,7 @@ namespace InventoryManagement.Repositories
             return context.Set<T>().Find(Id);
         }
 
-        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
-        {
-            return context.Set<T>().Where(expression);
-        }
-
+        
         public async Task<ActionResponseDto> CreateAsync(T entity)
         {
             await context.Set<T>().AddAsync(entity);
@@ -58,16 +54,7 @@ namespace InventoryManagement.Repositories
             }
         }
 
-        public async Task CreateAndSaveRangeAsync(ICollection<T> entities)
-        {
-            await context.Set<T>().AddRangeAsync(entities);
-            await context.SaveChangesAsync();
-        }
-        public async Task CreateRangeAsync(ICollection<T> entities)
-        {
-            await context.Set<T>().AddRangeAsync(entities);
-        }
-
+        
         public async Task<ActionResponseDto> UpdateAsync(T entity)
         {
             try

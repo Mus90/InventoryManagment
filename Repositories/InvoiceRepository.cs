@@ -14,7 +14,5 @@ namespace InventoryManagement.Repositories
         {
             _context = appContext;
         }
-
-
     }
 }

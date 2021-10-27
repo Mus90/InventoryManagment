@@ -1,12 +1,20 @@
 ﻿<Properties StartupConfiguration="{6E3B8441-4ACD-4933-A634-B4C9211EAF2F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="QueryHandlers/ProductsQueriesHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
       <File FileName="Data/ApplicationDbContext.cs" Line="5" Column="32" />
       <File FileName="Models/Dtos/CreateProductDto.cs" Line="1" Column="15" />
-      <File FileName="Models/Entities/Invoice.cs" Line="1" Column="1" />
-      <File FileName="Models/Entities/Product.cs" Line="15" Column="29" />
-      <File FileName="QueryHandlers/IProductsQueriesHandler.cs" Line="15" Column="2" />
-      <File FileName="QueryHandlers/ProductsQueriesHandler.cs" Line="1" Column="1" />
+      <File FileName="Models/Entities/Product.cs" Line="16" Column="36" />
+      <File FileName="QueryHandlers/IProductsQueriesHandler.cs" Line="13" Column="68" />
+      <File FileName="QueryHandlers/ProductsQueriesHandler.cs" Line="18" Column="40" />
+      <File FileName="Repositories/RepositoryBase.cs" Line="83" Column="46" />
+      <File FileName="Repositories/InvoiceRepository.cs" Line="16" Column="10" />
+      <File FileName="Repositories/ProductRepository.cs" Line="12" Column="60" />
+      <File FileName="Models/Entities/SoldItems.cs" Line="8" Column="27" />
+      <File FileName="CommandHandlers/ProductsCommandsHandler.cs" Line="27" Column="27" />
+      <File FileName="Models/Dtos/UpdateProductDto.cs" Line="7" Column="48" />
+      <File FileName="CommandHandlers/InvoiceCommandsHandler.cs" Line="57" Column="55" />
+      <File FileName="Startup.cs" Line="70" Column="71" />
+      <File FileName="appsettings.json" Line="11" Column="4" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,12 +23,11 @@
             <Node name="InventoryManagement" expanded="True">
               <Node name="CommandHandlers" expanded="True" />
               <Node name="Models" expanded="True">
+                <Node name="Dtos" expanded="True" />
                 <Node name="Entities" expanded="True" />
               </Node>
-              <Node name="QueryHandlers" expanded="True">
-                <Node name="ProductsQueriesHandler.cs" selected="True" />
-              </Node>
               <Node name="Repositories" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

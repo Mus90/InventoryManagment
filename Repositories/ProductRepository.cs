@@ -22,10 +22,11 @@ namespace InventoryManagement.Repositories
         {
             return FindAll().Include(x => x.Sold);
         }
+
         public void UpdateStock(int productId, int Quantity)
         {
             var product = Find(productId);
-            product.UnitsInStock = product.UnitsInStock - Quantity;
+            product.UnitsInStock -= Quantity;
             _context.Update(product);
             _context.SaveChanges();
         }
