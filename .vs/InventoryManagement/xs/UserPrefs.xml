@@ -1,20 +1,23 @@
 ﻿<Properties StartupConfiguration="{6E3B8441-4ACD-4933-A634-B4C9211EAF2F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Dtos/CreateProductDto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Repositories/ProductRepository.cs">
     <Files>
       <File FileName="Data/ApplicationDbContext.cs" Line="5" Column="32" />
       <File FileName="Models/Dtos/CreateProductDto.cs" Line="1" Column="15" />
+      <File FileName="Models/Entities/Invoice.cs" Line="1" Column="1" />
+      <File FileName="Models/Entities/Product.cs" Line="1" Column="1" />
+      <File FileName="Models/Entities/SoldItems.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="28" Column="67" />
+      <File FileName="Repositories/RepositoryBase.cs" Line="122" Column="1" />
+      <File FileName="Repositories/InvoiceRepository.cs" Line="21" Column="1" />
+      <File FileName="Repositories/ProductRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InventoryManagement" expanded="True">
             <Node name="InventoryManagement" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Dtos" expanded="True">
-                  <Node name="CreateProductDto.cs" selected="True" />
-                </Node>
-                <Node name="Entities" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="ProductRepository.cs" selected="True" />
               </Node>
             </Node>
           </Node>
