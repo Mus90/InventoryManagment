@@ -15,6 +15,8 @@
     <None Remove="AutoMapper" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Repositories\" />
+    <None Remove="CommandHandlers\" />
+    <None Remove="QueryHandlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -23,6 +25,8 @@
     <Folder Include="Models\Dtos\" />
     <Folder Include="Models\Entities\" />
     <Folder Include="Repositories\" />
+    <Folder Include="CommandHandlers\" />
+    <Folder Include="QueryHandlers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.11" />
