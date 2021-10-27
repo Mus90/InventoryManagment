@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{6E3B8441-4ACD-4933-A634-B4C9211EAF2F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/SuperAdminDefaultOptions.cs">
     <Files>
       <File FileName="Data/ApplicationDbContext.cs" Line="5" Column="32" />
       <File FileName="Models/Dtos/CreateProductDto.cs" Line="1" Column="15" />
@@ -13,21 +13,27 @@
       <File FileName="CommandHandlers/ProductsCommandsHandler.cs" Line="27" Column="27" />
       <File FileName="Models/Dtos/UpdateProductDto.cs" Line="7" Column="48" />
       <File FileName="CommandHandlers/InvoiceCommandsHandler.cs" Line="57" Column="55" />
-      <File FileName="Startup.cs" Line="70" Column="71" />
-      <File FileName="appsettings.json" Line="11" Column="4" />
+      <File FileName="Startup.cs" Line="57" Column="1" />
+      <File FileName="appsettings.json" Line="17" Column="28" />
+      <File FileName="Controllers/AccountController.cs" Line="52" Column="74" />
+      <File FileName="Program.cs" Line="5" Column="37" />
+      <File FileName="Properties/launchSettings.json" Line="24" Column="28" />
+      <File FileName="Data/DbInitializer.cs" Line="29" Column="33" />
+      <File FileName="Services/Functional.cs" Line="79" Column="30" />
+      <File FileName="Models/SuperAdminDefaultOptions.cs" Line="8" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InventoryManagement" expanded="True">
             <Node name="InventoryManagement" expanded="True">
-              <Node name="CommandHandlers" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Dtos" expanded="True" />
-                <Node name="Entities" expanded="True" />
+                <Node name="SuperAdminDefaultOptions.cs" selected="True" />
               </Node>
-              <Node name="Repositories" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
