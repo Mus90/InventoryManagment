@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{6E3B8441-4ACD-4933-A634-B4C9211EAF2F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Dtos/CreateProductDto.cs">
+    <Files>
+      <File FileName="Data/ApplicationDbContext.cs" Line="5" Column="32" />
+      <File FileName="Models/Dtos/CreateProductDto.cs" Line="1" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InventoryManagement" expanded="True">
+            <Node name="InventoryManagement" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Dtos" expanded="True">
+                  <Node name="CreateProductDto.cs" selected="True" />
+                </Node>
+                <Node name="Entities" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.InventoryManagement PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
