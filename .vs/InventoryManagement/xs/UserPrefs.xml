@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{F864B7B0-0F78-4C6C-A058-DB1CB003F094}|Default">
+  <MonoDevelop.Ide.ItemProperties.InventoryFrontend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Properties/launchSettings.json" Line="25" Column="70" />
+      <File FileName="Startup.cs" Line="17" Column="38" />
+      <File FileName="Services/MappingProfile.cs" Line="20" Column="37" />
+      <File FileName="Controllers/AccountController.cs" Line="89" Column="1" />
+      <File FileName="Controllers/ProductsController.cs" Line="80" Column="1" />
+      <File FileName="../InventoryFrontend/Startup.cs" Line="46" Column="45" />
+      <File FileName="Repositories/InvoiceRepository.cs" Line="12" Column="61" />
+      <File FileName="Models/Dtos/InvoiceQueryResponseDto.cs" Line="14" Column="50" />
+      <File FileName="../InventoryFrontend/Pages/Index.razor" Line="6" Column="1" />
+      <File FileName="../InventoryFrontend/Pages/Products/RestockProduct.razor" Line="23" Column="56" />
+      <File FileName="../InventoryFrontend/obj/Debug/net5.0/Razor/Pages/Products/RestockProduct.razor.g.cs" Line="127" Column="168" />
+      <File FileName="../InventoryFrontend/Pages/Products/RestockProductBase.cs" Line="25" Column="26" />
+      <File FileName="Models/Dtos/ReStockProductRequestDto.cs" Line="5" Column="22" />
+      <File FileName="Models/Dtos/CreateProductDto.cs" Line="14" Column="45" />
+      <File FileName="../InventoryFrontend/appsettings.json" Line="9" Column="37" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Controllers/ReportsController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/InvoicesController.cs" Line="14" Column="1" />
+      <File FileName="../InventoryFrontend/Services/ProductsService.cs" Line="29" Column="42" />
+      <File FileName="QueryHandlers/ProductsQueriesHandler.cs" Line="24" Column="1" />
+      <File FileName="Data/DbInitializer.cs" Line="26" Column="45" />
+      <File FileName="Services/Functional.cs" Line="93" Column="73" />
+      <File FileName="Repositories/RepositoryBase.cs" Line="21" Column="1" />
+      <File FileName="CommandHandlers/ProductsCommandsHandler.cs" Line="48" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InventoryManagement" expanded="True">
+            <Node name="InventoryManagement" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>InventoryFrontend/InventoryFrontend.csproj</String>
+    <String>InventoryManagement.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.InventoryManagement PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mustafa/Desktop/Inventory/InventoryManagment/InventoryManagement/Controllers/AccountController.cs" relfile="InventoryManagement/Controllers/AccountController.cs" line="77" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{0F6C58C3-928C-42A9-8E94-2B30EE202ED4}" ItemName="InventoryFrontend" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>

@@ -1,0 +1,53 @@
+﻿@page "/product/Update/{id}"
+@inherits UpdateProductBase
+
+<div class="page-content container-fluid">
+    @if (product == null)
+    {
+    <p>-- Loading --</p>
+    }
+    else
+    {
+        <EditForm Model="@product" OnSubmit="HandleValidSubmit">
+            <div class="row">
+                <div class="col-lg-6 p-1">
+                    <div class="card mb-3 h-100">
+                        <div class="card-body">
+                            <h6 class="mb-3">Update Product</h6>
+
+                            <DataAnnotationsValidator />
+
+                            <label class="form-group has-float-label">
+                                <input @bind-value="product.ProductName" class="form-control">
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => product.ProductName)" />
+                                </span>
+                                <span>Name</span>
+                            </label>
+
+                            <label class="form-group has-float-label">
+                                <input @bind-value="product.SellingPrice" class="form-control">
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => product.SellingPrice)" />
+                                </span>
+                                <span>Selling Price</span>
+                            </label>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-3 pl-5 pr-5 ">Submit</button>
+            </div>
+
+        </EditForm>
+
+
+    }
+
+</div>

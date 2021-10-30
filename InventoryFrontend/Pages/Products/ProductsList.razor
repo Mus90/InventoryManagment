@@ -1,0 +1,36 @@
+﻿@page "/ProductsList"
+@inherits ProductsListBase
+
+@if (!isDataReady)
+{
+    <span>Loading ...</span>
+}
+else
+{
+
+
+    <button type="button" @onclick="@(() => navManager.NavigateTo("/product/Create"))" class="btn btn-primary mb-2">Create New</button>
+    <div class="row">
+        @foreach (var mList in products)
+        {
+            <div class="pr-1 col-lg-3 pb-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@mList.ProductName</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Stock: @mList.UnitsInStock</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Price: @mList.SellingPrice</h6>
+                        <a class="card-link" style="cursor:pointer" @onclick="@(() => navManager.NavigateTo($"/product/Update/{@mList.Id}"))">Edit</a>
+                        <a class="card-link" style="cursor:pointer" @onclick="@(() => navManager.NavigateTo($"/product/Restock/{@mList.Id}"))">Restock</a>
+                        <a class="card-link text-danger" style="cursor:pointer" @onclick="@(() => DeleteProduct(@mList.Id))">Delete</a>
+                        @*<a href="#" class="card-link text-danger" @onclick="@(() => navManager.NavigateTo("/"))">Delete</a>*@
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+}
+
+
+

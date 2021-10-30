@@ -1,0 +1,69 @@
+﻿@page "/invoice/View/{id}"
+@inherits ViewInvoiceBase
+
+<div class="page-content container-fluid">
+    @if (!isDataReady || invoice==null)
+    {
+        <p>-- Loading --</p>
+    }
+    else
+    {
+        <EditForm Model="@invoice" OnSubmit="HandleValidSubmit">
+            <div class="row">
+                <div class="col-lg-6 p-1">
+                    <div class="card mb-3 h-100">
+                        <div class="card-body">
+                            <h6 class="mb-3">Total: totalSelectedItems</h6>
+
+                            <DataAnnotationsValidator />
+
+                            <label class="form-group has-float-label">
+                                <select value="@Currentitem.ProductId" @onchange="@getTotalPrice" class="form-control">
+                                    @foreach (var product in products)
+                                    {
+                                        <option value="@product.Id">@product.ProductName</option>
+                                    }
+                                </select>
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => Currentitem.ProductId)" />
+                                </span>
+                                <span>Product</span>
+                            </label>
+
+                            <label class="form-group has-float-label">
+                                <input @bind-value="Currentitem.Quantity" class="form-control">
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => Currentitem.Quantity)" />
+                                </span>
+                                <span>Quantity</span>
+                            </label>
+
+                            @foreach (var item in invoice.SoldItems)
+                            {
+                                var product = @products.Find(x => x.Id == item.ProductId);
+                        <span>@product.ProductName</span>
+                                <label class="form-group has-float-label">
+                                    <input @bind-value="item.Quantity" class="form-control">
+                                    <span class="text-danger">
+                                        <ValidationMessage For="@(() => Currentitem.Quantity)" />
+                                    </span>
+                                    <input class="form-control" value="(@item.Quantity* @product.SellingPrice)">
+                                </label>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-3 pl-5 pr-5 ">Submit</button>
+            </div>
+
+        </EditForm>
+
+
+    }
+
+</div>

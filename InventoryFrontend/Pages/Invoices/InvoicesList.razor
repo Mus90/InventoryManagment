@@ -1,0 +1,57 @@
+﻿@page "/invoicesList"
+@inherits InvoicesListBase
+
+@if (!isDataReady)
+{
+    <span>Loading ...</span>
+}
+else
+{
+
+
+    <button type="button" @onclick="@(() => navManager.NavigateTo("/invoice/Create"))" class="btn btn-primary mb-2">Create New</button>
+    <div class="row">
+       
+        
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Id</td>
+                                    <td>Total</td>
+                                    <td>Creation Date</td>
+                                    <td>CreatedBy</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var mList in invoices)
+                                {
+                                    <tr>
+                                        <td>
+                                            <a class="card-link" href="/invoice/Update/@mList.Id" style="cursor:pointer" >Edit</a>
+                                        </td>
+                                        <td>@mList.Id</td>
+                                        <td>@mList.Total</td>
+                                        <td>@mList.DateCreated</td>
+                                        <td>@mList.CreatedBy</td>
+                                    </tr>
+                                }
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+}
+
+
+
