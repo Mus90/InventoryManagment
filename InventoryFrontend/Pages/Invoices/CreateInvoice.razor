@@ -1,0 +1,72 @@
+﻿@page "/invoice/Create"
+@inherits CreateInvoiceBase
+
+<div class="page-content container-fluid">
+    @if (!isDataReady)
+    {
+    <p>-- Loading --</p>
+    }
+    else
+    {
+        <EditForm Model="@Currentitem" OnSubmit="HandleValidSubmit">
+            <div class="row">
+                <div class="col-lg-8 p-1">
+                    <div class="card mb-3 h-100">
+                        <div class="card-body">
+                            <h6 class="mb-3">Total: @totalSelectedItems</h6>
+
+                            <DataAnnotationsValidator />
+
+                            <label class="form-group has-float-label">
+                                <span>Product</span>
+                                <InputSelect class="form-control" ValueExpression="@(() => @Currentitem.ProductId)"
+                                             Value="@Currentitem.ProductId"
+                                             ValueChanged="@(async (int args) => { @Currentitem.ProductId = args; getTotalPrice(); })">
+                                    <option value="">**Choose Product**</option>
+                                    @foreach (var product in products)
+                                    {
+                                        <option value="@product.Id">@product.ProductName</option>
+                                    }
+                                </InputSelect>
+                                
+                                
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => Currentitem.ProductId)" />
+                                </span>
+
+                            </label>
+
+                            <label class="form-group has-float-label">
+                                <span>Quantity</span>
+                                <input  @onchange ="(e) => { Currentitem.Quantity = int.Parse(e.Value.ToString());getTotalPrice(); }">
+                                
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => Currentitem.Quantity)" />
+                                </span>
+
+                            </label>
+                            @foreach(var item in items)
+                            {
+                                <div class="row">
+                                    <div class="col-6">@products.Find(x=>x.Id == @item.ProductId).ProductName</div>
+                                    <div class="col-6">@item.Quantity</div>
+                                </div>
+                            }
+                            <button type="button" @onclick="@(()=>AddItemToCart())" class="btn btn-primary ml-2 ">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-3 pl-5 pr-5 ">Submit</button>
+            </div>
+
+        </EditForm>
+
+
+    }
+
+</div>

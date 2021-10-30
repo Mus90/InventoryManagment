@@ -1,0 +1,48 @@
+﻿@page "/product/Restock/{id}"
+@inherits RestockProductBase
+
+<div class="page-content container-fluid">
+    @if (product == null)
+    {
+    <p>-- Loading --</p>
+    }
+    else
+    {
+        <EditForm Model="@product" OnSubmit="HandleValidSubmit">
+            <div class="row">
+                <div class="col-lg-6 p-1">
+                    <div class="card mb-3 h-100">
+                        <div class="card-body">
+                            <h6 class="mb-3">Restock</h6>
+
+                            <DataAnnotationsValidator />
+
+                            
+
+                            <label class="form-group has-float-label">
+                                <input @bind-value="product.Id" hidden class="form-control">
+                                <input @bind-value="product.Quantity" class="form-control">
+                                <span class="text-danger">
+                                    <ValidationMessage For="@(() => product.Quantity)" />
+                                </span>
+                                <span>Quantity</span>
+                            </label>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-3 pl-5 pr-5 ">Submit</button>
+            </div>
+
+        </EditForm>
+
+
+    }
+
+</div>

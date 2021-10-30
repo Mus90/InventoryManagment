@@ -1,0 +1,48 @@
+﻿@page "/soldItemsReport"
+@inherits SoldItemsReportBase
+
+@if (!isDataReady)
+{
+    <span>Loading ...</span>
+}
+else
+{
+
+
+    <div class="row">
+       
+        
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td>Product</td>
+                                    <td>Sold</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @foreach (var mList in products)
+                                {
+                                    <tr>
+                                        <td>@mList.ProductName</td>
+                                        <td>@mList.SoldItems</td>
+                                    </tr>
+                                }
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+}
+
+
+

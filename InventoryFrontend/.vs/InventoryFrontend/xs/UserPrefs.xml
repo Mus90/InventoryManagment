@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{41FA094A-C845-419A-BD1A-B9941FE4DF28}|Default">
+  <MonoDevelop.Ide.ItemProperties.InventoryFrontend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../InventoryManagement/Services/MappingProfile.cs">
+    <Files>
+      <File FileName="Pages/Index.razor" Line="1" Column="1" />
+      <File FileName="Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/_Host.cshtml" Line="1" Column="1" />
+      <File FileName="App.razor" Line="8" Column="30" />
+      <File FileName="appsettings.json" Line="9" Column="2" />
+      <File FileName="Startup.cs" Line="48" Column="42" />
+      <File FileName="../InventoryManagement/Services/MappingProfile.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InventoryFrontend" expanded="True">
+            <Node name="InventoryManagement" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="MappingProfile.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
